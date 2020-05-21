@@ -1,0 +1,163 @@
+*{
+    text-decoration: none;
+}
+body{
+    background-color: #f3f3f3;
+    padding:0px;
+}
+header{
+    background-color: #fff;
+    width:100%;
+    height:100px;
+}
+
+header .header-brand{
+    font-family:catamaran;
+    font-size:24px;
+    color:#111;
+    font-weight:900;
+    text-transform:uppercase;
+    display: block;
+    margin:0 auto;
+    text-align:center;
+    padding:20px 0;
+}
+
+header nav ul{
+    display: block;
+    margin:0 auto;
+    width: fit-content;
+}
+
+header nav ul li{
+    display: inline-block;
+    float:left;
+    list-style: none;
+    padding:0 16px;
+}
+
+
+header nav ul li a{
+    font-family:catamaran;
+    font-size:16px;
+    color:#111;
+    font-weight:900;
+}
+
+header .header-cases{
+    display:none;
+}
+
+.index-banner{
+    width:100%;
+    height:calc(100vh - 100px);
+    background-image: url('images/2.jpg');
+    opacity : .9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    display: table;
+}
+
+.vertical-center{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-banner h2{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size:60px;
+    font-weight:900;
+    line-height:70px;
+    color:#fff;
+    text-align:center;
+    text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h1{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size:28px;
+    font-weight:100;
+    font-style:italic;
+    line-height:34px;
+    color:#fff;
+    text-align:center;
+    text-shadow: 2px 2px 8px #111;
+}
+
+.index-link div{
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
+    height:100px;
+    background-color: lightgrey;
+}
+
+.index-link div h2{ 
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size:28px;
+    font-weight:900;
+    line-height:34px;
+    color:#111;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+footer{
+    width: 100%;
+    height:100px;
+    padding:40px 40px;
+    margin-top:20px;
+    background-color: #111;
+}
+footer ul{
+    width:fit-content;
+    float:left;
+    padding-left: 20px;
+}
+
+footer ul li{
+    display: block;
+    list-style: none;
+}
+
+footer ul li a{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    color:#fff;
+    font-size:14px;
+}
+
+@media only screen and (min-width:1000px) {
+    header .header-brand{
+        margin:31px 0;
+        text-align:left;
+        padding:0px 20px 0px 40px;
+        border-right:3px solid #111;
+        float:left;
+    }
+
+    header nav ul{
+        margin:20px 0px 0px 20px;
+        float:left;
+    }
+    header nav ul li a{
+        line-height: 60px;
+    }
+
+    header .header-cases{
+        display:block;
+        font-family:catamaran;
+        font-size:16px;
+        color:#111;
+        text-transform: uppercase;
+        border:1px solid black;
+        float:right;
+        line-height:38px;
+        margin-right: 40px;
+        padding:0 20px;
+        margin-top:31px;
+    }
+
+    header .header-cases:hover{
+        background-color: whitesmoke;
+    }
+}
