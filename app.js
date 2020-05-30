@@ -25,6 +25,8 @@ var sendMailRouter = require('./routes/sendMailRoute');
 var getclientRouter = require('./routes/getAllClientRoute');
 var announcementRouter = require('./routes/AnnouncementRoute');
 var projectannouncementRouter = require('./routes/projectannouncementRoute');
+var projectannouncementRouter1 = require('./routes/projectannoucementroute1');
+
 var projectDateCountRouter = require('./routes/projectDateCountRoute');
 var projectenddateupdate = require('./routes/UpdateEndDateRoute');
 var ModuleRouter = require('./routes/ModuleRoute');
@@ -88,6 +90,7 @@ app.use('/sendmail',sendMailRouter);
 app.use('/getclient',getclientRouter);
 app.use('/announcement',announcementRouter);
 app.use('/projectannouncement',projectannouncementRouter);
+app.use('/projectannouncement1',projectannouncementRouter1);
 app.use('/datecount',projectDateCountRouter);
 app.use('/module',ModuleRouter);
 app.use('/submodule',SubModuleRouter);
